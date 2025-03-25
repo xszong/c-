@@ -1,0 +1,33 @@
+using System;
+
+namespace ClassExample
+{
+    class MyClass
+    {
+        // 班级名称属性
+        public string ClassName { get; set; }
+
+        // 学生人数属性
+        public int NumberOfStudents { get; set; }
+
+        // 输出班级信息的方法
+        public void DisplayClassInfo()
+        {
+            Console.WriteLine("班级名称：" + ClassName);
+            Console.WriteLine("学生人数：" + NumberOfStudents);
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            MyClass myClass = new MyClass();
+            myClass.ClassName = "Class A";
+            myClass.NumberOfStudents = 25;
+            myClass.DisplayClassInfo();
+
+            Console.ReadKey();
+        }
+    }
+}
