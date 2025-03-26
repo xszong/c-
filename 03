@@ -31,3 +31,38 @@ namespace ClassExample
         }
     }
 }
+
+、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、
+using System;
+
+namespace ClassExample
+{
+    class MyClass   // 班级类
+    {
+        // 班级名称属性
+        public string ClassName { get; set; } // 设置和获取班级名称
+
+        // 学生人数属性
+        public int NumberOfStudents { get; set; }// 设置和获取学生人数
+
+        // 输出班级信息的方法
+        public void DisplayClassInfo()// 显示班级信息
+        {
+            Console.WriteLine("班级名称：" + ClassName);
+            Console.WriteLine("学生人数：" + NumberOfStudents);
+        }
+    }
+
+    class Program // 主程序类
+    {
+        static void Main(string[] args) // 主程序入口
+        {
+            MyClass myClass = new MyClass();// 创建班级对象
+            myClass.ClassName = "Class A";// 设置班级名称
+            myClass.NumberOfStudents = 25;// 设置学生人数
+            myClass.DisplayClassInfo();// 显示班级信息
+
+            Console.ReadKey();// 等待用户输入，关闭程序
+        }
+    }
+}
