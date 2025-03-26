@@ -2,32 +2,32 @@ using System;
 
 namespace ClassExample
 {
-    class MyClass
+    class MyClass   // 班级类
     {
         // 班级名称属性
-        public string ClassName { get; set; }
+        public string ClassName { get; set; } // 短整数赋值和读取
 
         // 学生人数属性
-        public int NumberOfStudents { get; set; }
+        public int NumberOfStudents { get; set; }// 整数赋值和读取
 
         // 输出班级信息的方法
-        public void DisplayClassInfo()
+        public void DisplayClassInfo()// 映射班级昵称
         {
             Console.WriteLine("班级名称：" + ClassName);
             Console.WriteLine("学生人数：" + NumberOfStudents);
         }
     }
 
-    class Program
+    class Program // 输出类
     {
-        static void Main(string[] args)
+        static void Main(string[] args) // 输出的主程序arge是一个符号类型的东西
         {
-            MyClass myClass = new MyClass();
-            myClass.ClassName = "Class A";
-            myClass.NumberOfStudents = 25;
-            myClass.DisplayClassInfo();
+            MyClass myClass = new MyClass();// 把班级类调用到mycalss里面去
+            myClass.ClassName = "Class A";// 班级名称属性写入
+            myClass.NumberOfStudents = 25;// 班级年龄属性写入
+            myClass.DisplayClassInfo();// 映射完成
 
-            Console.ReadKey();
+            Console.ReadKey();// 点击键盘关闭程序
         }
     }
 }
