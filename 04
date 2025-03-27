@@ -1,0 +1,17 @@
+using System;
+
+namespace ValueTypesExample
+{
+    class MainApp
+    {
+        static void Main(string[] args)
+        {
+            int n1 = 5;
+            int n2 = n1;
+            Console.WriteLine(n1 + " " + n2);    // 输出：5 5
+
+            n2 = 7;
+            Console.WriteLine(n1 + " " + n2);    // 输出：5 7
+        }
+    }
+}
